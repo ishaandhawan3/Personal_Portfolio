@@ -181,19 +181,6 @@ export default function Hero() {
             <div className="pointer-events-none absolute inset-x-0 top-0 h-[40%] bg-gradient-to-b from-white/[0.03] to-transparent" aria-hidden />
           </button>
 
-          <div className="mt-3 grid grid-cols-3 gap-px overflow-hidden rounded-xl border border-white/[0.07] bg-white/[0.05]">
-            {[
-              { k: "production GenAI", v: "~97%", s: "validated extraction accuracy" },
-              { k: "voice platform", v: "3", s: "interchangeable PSTN transports" },
-              { k: "experience", v: "3 roles", s: "intern → engineer" },
-            ].map((m) => (
-              <div key={m.k} className="bg-ink-900/80 px-3 py-3.5">
-                <div className="font-mono text-base text-accent">{m.v}</div>
-                <div className="mt-1 text-[10.5px] uppercase tracking-wider text-ink-400">{m.k}</div>
-                <div className="mt-0.5 text-[10.5px] leading-tight text-ink-600">{m.s}</div>
-              </div>
-            ))}
-          </div>
         </motion.div>
       </div>
 
