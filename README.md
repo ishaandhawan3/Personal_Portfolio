@@ -41,6 +41,8 @@ All copy is data, not markup. Edit these and the page + terminal both update:
 
 ## The terminal
 
+See [TERMINAL.md](TERMINAL.md) for the full command reference.
+
 `lib/terminal/commands.ts` is the registry. Each command gets `(args, ctx)`, where `ctx`
 can scroll the page, open a project modal, open URLs and toggle effects — so a command can
 drive the GUI and vice versa (the GUI dispatches `portfolio:run` events).
